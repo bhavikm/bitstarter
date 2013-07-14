@@ -73,7 +73,7 @@ if(require.main == module) {
    
     
     if (program.url) {
-	console.log(program.url);
+
 	rest.get(program.url).on('complete', function(result) {
 	    if (result instanceof Error) {
 		sys.puts('Error: ' + result.message);
